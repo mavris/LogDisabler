@@ -30,8 +30,8 @@
     else if ([invocation.buffer.contentUTI isEqualToString:@"public.swift-source"]){
             logString = @"print(";
             logCommentString = @"drint(";
-            regularExpressionString =@"(Swift.){0,1}print\\([^\\)]*\\)[\\s]*[\\;]{0,1}";
-            regularExpressionCommentString=@"\\/\\*(Swift.){0,1}drint\\([^\\)]*\\)[\\s]*[\\;]{0,1}\\*\\/";
+            regularExpressionString =@"(Swift.){0,1}print\\([^\\)]*\\)[\t]*[\\;]{0,1}";
+            regularExpressionCommentString=@"\\/\\*(Swift.){0,1}drint\\([^\\)]*\\)[\ts]*[\\;]{0,1}\\*\\/";
     }
     else {
         
