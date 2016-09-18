@@ -11,7 +11,36 @@
 		27267B041D8D63DE001DA8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B031D8D63DE001DA8D4 /* main.m */; };
 		27267B061D8D63DE001DA8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27267B051D8D63DE001DA8D4 /* Assets.xcassets */; };
 		27267B091D8D63DE001DA8D4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27267B071D8D63DE001DA8D4 /* MainMenu.xib */; };
+		27267B171D8D6404001DA8D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27267B161D8D6404001DA8D4 /* Cocoa.framework */; };
+		27267B1D1D8D6404001DA8D4 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B1C1D8D6404001DA8D4 /* SourceEditorExtension.m */; };
+		27267B201D8D6404001DA8D4 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B1F1D8D6404001DA8D4 /* SourceEditorCommand.m */; };
+		27267B241D8D6404001DA8D4 /* Manage Comments.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27267B141D8D6404001DA8D4 /* Manage Comments.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2768D06E1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27267B221D8D6404001DA8D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27267AF41D8D63DE001DA8D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27267B131D8D6404001DA8D4;
+			remoteInfo = "Manage Comments";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27267B281D8D6404001DA8D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27267B241D8D6404001DA8D4 /* Manage Comments.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27267AFC1D8D63DE001DA8D4 /* LogDisabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogDisabler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +50,16 @@
 		27267B051D8D63DE001DA8D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27267B081D8D63DE001DA8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		27267B0A1D8D63DE001DA8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27267B141D8D6404001DA8D4 /* Manage Comments.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Manage Comments.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27267B161D8D6404001DA8D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27267B1A1D8D6404001DA8D4 /* Manage_Comments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Manage_Comments.entitlements; sourceTree = "<group>"; };
+		27267B1B1D8D6404001DA8D4 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		27267B1C1D8D6404001DA8D4 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		27267B1E1D8D6404001DA8D4 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		27267B1F1D8D6404001DA8D4 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		27267B211D8D6404001DA8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2768D06C1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+hasPrefixIgnoringWhiteSpace.h"; sourceTree = "<group>"; };
+		2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hasPrefixIgnoringWhiteSpace.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27267B111D8D6404001DA8D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27267B171D8D6404001DA8D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				27267AFE1D8D63DE001DA8D4 /* LogDisabler */,
+				27267B181D8D6404001DA8D4 /* Manage Comments */,
+				27267B151D8D6404001DA8D4 /* Frameworks */,
 				27267AFD1D8D63DE001DA8D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				27267AFC1D8D63DE001DA8D4 /* LogDisabler.app */,
+				27267B141D8D6404001DA8D4 /* Manage Comments.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +121,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27267B151D8D6404001DA8D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27267B161D8D6404001DA8D4 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27267B181D8D6404001DA8D4 /* Manage Comments */ = {
+			isa = PBXGroup;
+			children = (
+				27267B1B1D8D6404001DA8D4 /* SourceEditorExtension.h */,
+				27267B1C1D8D6404001DA8D4 /* SourceEditorExtension.m */,
+				27267B1E1D8D6404001DA8D4 /* SourceEditorCommand.h */,
+				27267B1F1D8D6404001DA8D4 /* SourceEditorCommand.m */,
+				27267B211D8D6404001DA8D4 /* Info.plist */,
+				27267B191D8D6404001DA8D4 /* Supporting Files */,
+				2768D06C1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.h */,
+				2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */,
+			);
+			path = "Manage Comments";
+			sourceTree = "<group>";
+		};
+		27267B191D8D6404001DA8D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27267B1A1D8D6404001DA8D4 /* Manage_Comments.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +162,34 @@
 				27267AF81D8D63DE001DA8D4 /* Sources */,
 				27267AF91D8D63DE001DA8D4 /* Frameworks */,
 				27267AFA1D8D63DE001DA8D4 /* Resources */,
+				27267B281D8D6404001DA8D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27267B231D8D6404001DA8D4 /* PBXTargetDependency */,
 			);
 			name = LogDisabler;
 			productName = LogDisabler;
 			productReference = 27267AFC1D8D63DE001DA8D4 /* LogDisabler.app */;
 			productType = "com.apple.product-type.application";
+		};
+		27267B131D8D6404001DA8D4 /* Manage Comments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Comments" */;
+			buildPhases = (
+				27267B101D8D6404001DA8D4 /* Sources */,
+				27267B111D8D6404001DA8D4 /* Frameworks */,
+				27267B121D8D6404001DA8D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Manage Comments";
+			productName = "Manage Comments";
+			productReference = 27267B141D8D6404001DA8D4 /* Manage Comments.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +201,11 @@
 				ORGANIZATIONNAME = Miksoft;
 				TargetAttributes = {
 					27267AFB1D8D63DE001DA8D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JSY962FCU8;
+						ProvisioningStyle = Automatic;
+					};
+					27267B131D8D6404001DA8D4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JSY962FCU8;
 						ProvisioningStyle = Automatic;
@@ -121,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				27267AFB1D8D63DE001DA8D4 /* LogDisabler */,
+				27267B131D8D6404001DA8D4 /* Manage Comments */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +238,13 @@
 			files = (
 				27267B061D8D63DE001DA8D4 /* Assets.xcassets in Resources */,
 				27267B091D8D63DE001DA8D4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27267B121D8D6404001DA8D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +260,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27267B101D8D6404001DA8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27267B1D1D8D6404001DA8D4 /* SourceEditorExtension.m in Sources */,
+				27267B201D8D6404001DA8D4 /* SourceEditorCommand.m in Sources */,
+				2768D06E1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27267B231D8D6404001DA8D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27267B131D8D6404001DA8D4 /* Manage Comments */;
+			targetProxy = 27267B221D8D6404001DA8D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27267B071D8D63DE001DA8D4 /* MainMenu.xib */ = {
@@ -252,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JSY962FCU8;
 				INFOPLIST_FILE = LogDisabler/Info.plist;
@@ -265,12 +397,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JSY962FCU8;
 				INFOPLIST_FILE = LogDisabler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miksoft.LogDisabler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27267B261D8D6404001DA8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Manage Comments/Manage_Comments.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JSY962FCU8;
+				INFOPLIST_FILE = "Manage Comments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miksoft.LogDisabler.Manage-Comments";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		27267B271D8D6404001DA8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Manage Comments/Manage_Comments.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JSY962FCU8;
+				INFOPLIST_FILE = "Manage Comments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miksoft.LogDisabler.Manage-Comments";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -293,6 +458,16 @@
 				27267B0F1D8D63DE001DA8D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Comments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27267B261D8D6404001DA8D4 /* Debug */,
+				27267B271D8D6404001DA8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
