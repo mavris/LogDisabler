@@ -19,7 +19,7 @@
 }
 
 - (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError * _Nullable nilOrError))completionHandler {
-
+    NSLog(@"");
     //Checks if the file contains source code of Objective-C or Swift. Then is sets the appropriate variables
     if ([invocation.buffer.contentUTI isEqualToString:@"public.objective-c-source"]) {
             logString = @"NSLog(";

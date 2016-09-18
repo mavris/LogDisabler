@@ -62,6 +62,7 @@
 		2768D06C1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+hasPrefixIgnoringWhiteSpace.h"; sourceTree = "<group>"; };
 		2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hasPrefixIgnoringWhiteSpace.m"; sourceTree = "<group>"; };
 		2768D0AA1D8EC0DA002E6B3A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2768D0AC1D8ECF46002E6B3A /* LogDisabler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogDisabler.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 		27267AFE1D8D63DE001DA8D4 /* LogDisabler */ = {
 			isa = PBXGroup;
 			children = (
+				2768D0AC1D8ECF46002E6B3A /* LogDisabler.entitlements */,
 				27267AFF1D8D63DE001DA8D4 /* AppDelegate.h */,
 				27267B001D8D63DE001DA8D4 /* AppDelegate.m */,
 				27267B051D8D63DE001DA8D4 /* Assets.xcassets */,
@@ -207,6 +209,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JSY962FCU8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					27267B131D8D6404001DA8D4 = {
 						CreatedOnToolsVersion = 8.0;
@@ -387,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogDisabler/LogDisabler.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JSY962FCU8;
@@ -401,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogDisabler/LogDisabler.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JSY962FCU8;
