@@ -10,13 +10,14 @@
 		27267B011D8D63DE001DA8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B001D8D63DE001DA8D4 /* AppDelegate.m */; };
 		27267B041D8D63DE001DA8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B031D8D63DE001DA8D4 /* main.m */; };
 		27267B061D8D63DE001DA8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27267B051D8D63DE001DA8D4 /* Assets.xcassets */; };
-		27267B091D8D63DE001DA8D4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27267B071D8D63DE001DA8D4 /* MainMenu.xib */; };
 		27267B171D8D6404001DA8D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27267B161D8D6404001DA8D4 /* Cocoa.framework */; };
 		27267B1D1D8D6404001DA8D4 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B1C1D8D6404001DA8D4 /* SourceEditorExtension.m */; };
 		27267B201D8D6404001DA8D4 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 27267B1F1D8D6404001DA8D4 /* SourceEditorCommand.m */; };
-		27267B241D8D6404001DA8D4 /* Manage Comments.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27267B141D8D6404001DA8D4 /* Manage Comments.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27267B241D8D6404001DA8D4 /* Manage Logs.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27267B141D8D6404001DA8D4 /* Manage Logs.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2768D06E1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */; };
 		2768D0AB1D8EC0DA002E6B3A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2768D0AA1D8EC0DA002E6B3A /* .gitignore */; };
+		277EFACB1D909B510063845E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277EFACA1D909B510063845E /* ViewController.m */; };
+		27E336E11D9097E100BCF12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E336E01D9097E100BCF12D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				27267B241D8D6404001DA8D4 /* Manage Comments.appex in Embed App Extensions */,
+				27267B241D8D6404001DA8D4 /* Manage Logs.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,9 +50,8 @@
 		27267B001D8D63DE001DA8D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27267B031D8D63DE001DA8D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27267B051D8D63DE001DA8D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27267B081D8D63DE001DA8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		27267B0A1D8D63DE001DA8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27267B141D8D6404001DA8D4 /* Manage Comments.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Manage Comments.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27267B141D8D6404001DA8D4 /* Manage Logs.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Manage Logs.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27267B161D8D6404001DA8D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27267B1A1D8D6404001DA8D4 /* Manage_Comments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Manage_Comments.entitlements; sourceTree = "<group>"; };
 		27267B1B1D8D6404001DA8D4 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
@@ -63,6 +63,9 @@
 		2768D06D1D8D74CD002E6B3A /* NSString+hasPrefixIgnoringWhiteSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hasPrefixIgnoringWhiteSpace.m"; sourceTree = "<group>"; };
 		2768D0AA1D8EC0DA002E6B3A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2768D0AC1D8ECF46002E6B3A /* LogDisabler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogDisabler.entitlements; sourceTree = "<group>"; };
+		277EFAC91D909B510063845E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		277EFACA1D909B510063845E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		27E336E01D9097E100BCF12D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				27267AFC1D8D63DE001DA8D4 /* LogDisabler.app */,
-				27267B141D8D6404001DA8D4 /* Manage Comments.appex */,
+				27267B141D8D6404001DA8D4 /* Manage Logs.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,11 +110,13 @@
 		27267AFE1D8D63DE001DA8D4 /* LogDisabler */ = {
 			isa = PBXGroup;
 			children = (
+				27E336E01D9097E100BCF12D /* Main.storyboard */,
 				2768D0AC1D8ECF46002E6B3A /* LogDisabler.entitlements */,
+				277EFAC91D909B510063845E /* ViewController.h */,
+				277EFACA1D909B510063845E /* ViewController.m */,
 				27267AFF1D8D63DE001DA8D4 /* AppDelegate.h */,
 				27267B001D8D63DE001DA8D4 /* AppDelegate.m */,
 				27267B051D8D63DE001DA8D4 /* Assets.xcassets */,
-				27267B071D8D63DE001DA8D4 /* MainMenu.xib */,
 				27267B0A1D8D63DE001DA8D4 /* Info.plist */,
 				27267B021D8D63DE001DA8D4 /* Supporting Files */,
 			);
@@ -179,9 +184,9 @@
 			productReference = 27267AFC1D8D63DE001DA8D4 /* LogDisabler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		27267B131D8D6404001DA8D4 /* Manage Comments */ = {
+		27267B131D8D6404001DA8D4 /* Manage Logs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Comments" */;
+			buildConfigurationList = 27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Logs" */;
 			buildPhases = (
 				27267B101D8D6404001DA8D4 /* Sources */,
 				27267B111D8D6404001DA8D4 /* Frameworks */,
@@ -191,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = "Manage Comments";
+			name = "Manage Logs";
 			productName = "Manage Comments";
-			productReference = 27267B141D8D6404001DA8D4 /* Manage Comments.appex */;
+			productReference = 27267B141D8D6404001DA8D4 /* Manage Logs.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +241,7 @@
 			projectRoot = "";
 			targets = (
 				27267AFB1D8D63DE001DA8D4 /* LogDisabler */,
-				27267B131D8D6404001DA8D4 /* Manage Comments */,
+				27267B131D8D6404001DA8D4 /* Manage Logs */,
 			);
 		};
 /* End PBXProject section */
@@ -246,9 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E336E11D9097E100BCF12D /* Main.storyboard in Resources */,
 				27267B061D8D63DE001DA8D4 /* Assets.xcassets in Resources */,
 				2768D0AB1D8EC0DA002E6B3A /* .gitignore in Resources */,
-				27267B091D8D63DE001DA8D4 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277EFACB1D909B510063845E /* ViewController.m in Sources */,
 				27267B041D8D63DE001DA8D4 /* main.m in Sources */,
 				27267B011D8D63DE001DA8D4 /* AppDelegate.m in Sources */,
 			);
@@ -286,21 +292,10 @@
 /* Begin PBXTargetDependency section */
 		27267B231D8D6404001DA8D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27267B131D8D6404001DA8D4 /* Manage Comments */;
+			target = 27267B131D8D6404001DA8D4 /* Manage Logs */;
 			targetProxy = 27267B221D8D6404001DA8D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		27267B071D8D63DE001DA8D4 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27267B081D8D63DE001DA8D4 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		27267B0B1D8D63DE001DA8D4 /* Debug */ = {
@@ -473,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Comments" */ = {
+		27267B251D8D6404001DA8D4 /* Build configuration list for PBXNativeTarget "Manage Logs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27267B261D8D6404001DA8D4 /* Debug */,

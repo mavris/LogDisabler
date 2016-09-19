@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Manage Comments</string>
+	<string>Manage Logs</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.developer-tools</string>
 	<key>CFBundleExecutable</key>
@@ -34,17 +34,17 @@
 					<key>XCSourceEditorCommandClassName</key>
 					<string>SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>disableComments</string>
+					<string>disableLogs</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Disable Comments</string>
+					<string>Disable Logs</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
 					<string>SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>enableComments</string>
+					<string>enableLogs</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Enable Comments</string>
+					<string>Enable Logs</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

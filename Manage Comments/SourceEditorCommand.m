@@ -19,7 +19,8 @@
 }
 
 - (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError * _Nullable nilOrError))completionHandler {
-    NSLog(@"");
+  
+
     //Checks if the file contains source code of Objective-C or Swift. Then is sets the appropriate variables
     if ([invocation.buffer.contentUTI isEqualToString:@"public.objective-c-source"]) {
             logString = @"NSLog(";
@@ -39,7 +40,7 @@
     }
     
     //Checks which button has been clicked and is executing the appropriate action
-    if ([invocation.commandIdentifier isEqualToString:@"disableComments"]) {
+    if ([invocation.commandIdentifier isEqualToString:@"disableLogs"]) {
         
         //Looping trhroug the lines
         for(NSString *str in invocation.buffer.lines) {
@@ -64,7 +65,7 @@
         }
     }
     else
-    if ([invocation.commandIdentifier isEqualToString:@"enableComments"]) {
+    if ([invocation.commandIdentifier isEqualToString:@"enableLogs"]) {
         
         //Looping trhroug the line
         for(NSString *str in invocation.buffer.lines) {
